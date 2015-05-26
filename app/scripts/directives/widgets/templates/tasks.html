@@ -1,0 +1,29 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{title}}
+    </div>
+    <div class='alert alert-info text-right'>
+        <ul class='list-inline'>
+            <li><a href='#'><i class="fa fa-check"></i> Add task</a>
+            </li>
+            <li><a href='#'><i class="fa fa-list"></i> Watch completed tasks</a>
+            </li>
+        </ul>
+    </div>
+    <div class='panel-body'>
+        <div class='todo-list-container'>
+            <table class='table table-striped'>
+                <tr ng-repeat='task in tasks'>
+                    <td>
+                        <p>
+                            {{task.task}}
+                        </p>
+                    </td>
+                    <td>
+                        <a href='#'>Done</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
