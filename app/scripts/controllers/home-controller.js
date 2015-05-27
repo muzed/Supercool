@@ -32,5 +32,4 @@ app.controller('homeController', ['$scope', 'getXml', function ($scope, getXml) 
         {task: 'get dollora'},
         
     ];
-          console.log($scope.getXml);                        
 }])
